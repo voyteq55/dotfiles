@@ -6,4 +6,6 @@ alias ll='ls -alFT'
 alias dc='cd'
 alias please='sudo'
 bindkey -v
-PS1="%~ >>> "
+
+source "$HOME/External Libraries/zsh-git-prompt/zshrc.sh"
+PS1='%~ $(git_super_status)>>> '
